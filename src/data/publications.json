@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pub-01",
+    "title": "Hybrid Quantum-Classical Neural Architectures for High-Resolution Biomedical Feature Extraction",
+    "authors": ["QuantCom Research Group", "Collaborators"],
+    "venue": "IEEE Transactions on Quantum Engineering",
+    "year": 2025,
+    "type": "SCI",
+    "doi": "10.1109/TQE.2025.0001",
+    "abstract": "Exploration of parameterized variational quantum circuits applied to biomedical edge computing."
+  },
+  {
+    "id": "pub-02",
+    "title": "Lattice-Based Post-Quantum Cryptographic Protocols for Sensor Payload Integrity",
+    "authors": ["QuantCom Security Team", "DRDO Research Wing"],
+    "venue": "Journal of Cryptographic Engineering",
+    "year": 2024,
+    "type": "SCIE",
+    "doi": "10.1007/s13389-024-0002",
+    "abstract": "Benchmarking lightweight lattice implementations on constrained remote sensor architectures."
+  },
+  {
+    "id": "pub-03",
+    "title": "Quantum Machine Learning Paradigms: A Comparative Study of Variational Classifiers",
+    "authors": ["IEM CoE Quantum Division"],
+    "venue": "International Conference on Quantum Information and Computing (ICQIC)",
+    "year": 2024,
+    "type": "Conference",
+    "doi": "10.1145/3600000.360001",
+    "abstract": "Systematic benchmarking of state preparation and ansatz depth trade-offs."
+  }
+]
