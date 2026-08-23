@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'QuantCom | IEM Centre of Excellence in Quantum Computing',
   description:
     'Researching Post-Quantum Cryptography, Quantum Machine Learning, and next-gen computational architectures at Institute of Engineering & Management.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
