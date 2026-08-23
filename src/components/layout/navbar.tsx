@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full px-4 pt-4 pb-2">
       <div className="max-w-6xl mx-auto glass-panel rounded-2xl px-5 py-3.5 flex items-center justify-between border-white/10 shadow-2xl shadow-black/50">
-        {/* Brand with PNG Logo */}
+        {/* Brand */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-surface flex items-center justify-center border border-white/10 group-hover:scale-105 transition-transform duration-200">
             <Image
@@ -39,7 +39,7 @@ export const Navbar: React.FC = () => {
               QuantCom
             </span>
             <span className="text-[10px] text-gray-400 tracking-tight leading-none">
-              IEM Centre of Excellence
+              IEM Centre of Excellence for Quantum Computing
             </span>
           </div>
         </Link>

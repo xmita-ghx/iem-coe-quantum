@@ -11,7 +11,7 @@ import { AnimatedGradientBorder } from '@/components/ui/animated-gradient-border
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden flex flex-col items-center text-center px-4">
-      {/* Launchify-Style Top Pill */}
+      {/* Top Pill */}
       <motion.div
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export const HeroSection: React.FC = () => {
       >
         <Badge variant="cyan" className="mb-6 py-1.5 px-4 backdrop-blur-md">
           <Sparkles className="w-3.5 h-3.5 text-cyan-400 mr-1 animate-spin" />
-          QuantCom • IEM Centre of Excellence
+          QuantCom • IEM Centre of Excellence for Quantum Computing
         </Badge>
       </motion.div>
 
@@ -28,17 +28,27 @@ export const HeroSection: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl text-white leading-[1.1]"
+        className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl text-white leading-[1.1]"
       >
-        Pioneering <span className="quantum-gradient-text">Quantum AI</span> & Resilient Cryptography
+        IEM Centre of Excellence for Quantum Computing
       </motion.h1>
 
-      {/* Subtitle */}
+      {/* Stylized Subtitle with Gradient Ombre */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.15 }}
+        className="mt-4 text-xl sm:text-2xl font-bold tracking-tight text-gray-200"
+      >
+        Pioneering <span className="quantum-gradient-text">Quantum AI</span> & Resilient Cryptography
+      </motion.p>
+
+      {/* Description */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="mt-6 text-base sm:text-lg text-gray-400 max-w-2xl leading-relaxed"
+        className="mt-4 text-base sm:text-lg text-gray-400 max-w-2xl leading-relaxed"
       >
         Bridging theoretical quantum mechanics and real-world deployment across Post-Quantum
         Security, Quantum Machine Learning, and next-generation algorithm design.
