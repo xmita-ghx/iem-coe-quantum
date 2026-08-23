@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Atom, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { NavItem } from '@/types';
 
@@ -22,10 +23,16 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full px-4 pt-4 pb-2">
       <div className="max-w-6xl mx-auto glass-panel rounded-2xl px-5 py-3.5 flex items-center justify-between border-white/10 shadow-2xl shadow-black/50">
-        {/* Brand */}
+        {/* Brand with PNG Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition-transform duration-200">
-            <Atom className="w-5 h-5 animate-pulse" />
+          <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-surface flex items-center justify-center border border-white/10 group-hover:scale-105 transition-transform duration-200">
+            <Image
+              src="/assets/logos/quantcom-logo.png"
+              alt="QuantCom Logo"
+              width={36}
+              height={36}
+              className="object-contain p-0.5"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-sm tracking-wide text-white group-hover:text-cyan-400 transition-colors">

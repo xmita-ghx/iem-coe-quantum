@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Atom, ExternalLink, MapPin, Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -8,8 +9,14 @@ export const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-2 space-y-4">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center">
-              <Atom className="w-4 h-4" />
+            <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-surface border border-white/10 flex items-center justify-center">
+              <Image
+                src="/assets/logos/quantcom-logo.png"
+                alt="QuantCom Logo"
+                width={32}
+                height={32}
+                className="object-contain p-0.5"
+              />
             </div>
             <span className="font-bold text-white tracking-wide">QuantCom CoE</span>
           </div>
